@@ -13,6 +13,7 @@ public class App8 {
                 .stream()
                 .map(stringFuture -> {
                     try {
+
                         return stringFuture.get();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
